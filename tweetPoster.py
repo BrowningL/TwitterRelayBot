@@ -1,4 +1,4 @@
-import tweepy
+iimport tweepy
 import time
 from datetime import datetime
 
@@ -10,26 +10,16 @@ auth.set_access_token("1329343847902666752-FSvOVAVxwapGkgo0Y3vi3M6cgwBGKn",
 # wait_on_rate_limit_notify=True, This will print a notification when download limit is reached
 api = tweepy.API(auth, wait_on_rate_limit_notify=True)
 
-def tweetPost(tweetText):
-    print("Tweeted -", tweetText,"-", (datetime.now()).strftime("%d/%m/%Y %H:%M:%S"))
-    api.update_status((tweetText))
-    print("Sleeping 6s")
+def tweetOnce(tweetText1):
+    print("Tweeted -", tweetText1,"-", (datetime.now()).strftime("%d/%m/%Y %H:%M:%S"))
+    api.update_status((tweetText1))
+    #print("Sleeping 6s")
     time.sleep(6)
 
-#tweetPost("TestTweet2")
-
-
-"""
-tweets = api.user_timeline(screen_name=userID,
-# 200 is the maximum allowed count
-count=1,
-# Necessary to keep full_text
-# otherwise only the first 140 words are extracted
-tweet_mode = 'extended'
-)
-for info in tweets:
-    test = str(info.full_text)
-    api.update_status(str(info.full_text))
-    print(info.full_text)
-    print("done")
-"""
+def tweetTwice(tweetText1, tweetText2):
+    api.update_status((tweetText1))
+    print((datetime.now()).strftime("%d/%m/%Y %H:%M:%S"), "Tweeted -", tweetText1,"-", )
+    api.update_status((tweetText2))
+    print((datetime.now()).strftime("%d/%m/%Y %H:%M:%S"), "Tweeted -", tweetText2,"-", )
+    #print("Sleeping 6s")
+    time.sleep(6)
