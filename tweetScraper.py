@@ -9,13 +9,13 @@ auth = tweepy.OAuthHandler("TaKRCVSWQwbuoro6urJ5yPszb", "EPneGfRaOLiKdRzhlNJ6t6N
 auth.set_access_token("1329106117356609537-FoI7VGBMW4biy4pPGGyTf5y3LtDsdM", "D3V9tbPZSUuPb1p2QZvYcMmWdJmtCOp5lruyJA21BXLhY")
 # wait_on_rate_limit_notify=True, This will print a notification when download limit is reached
 api = tweepy.API(auth, wait_on_rate_limit_notify=True)
-userID = 'OfficialDealer1'
+userID = 'crypDat_io'
 update = True
 empty = False
 APIcount = 0
 tweetCount = 0
 #logfreq in minutes
-logFrequency = 0.5
+logFrequency = 15
 start_time = time.time()
 
 
