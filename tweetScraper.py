@@ -16,6 +16,8 @@ APIcount = 0
 tweetCount = 0
 #logfreq in minutes
 logFrequency = 15
+#logUpdater will help the log function
+logUpdater = logFrequency
 start_time = time.time()
 
 
@@ -67,9 +69,9 @@ while empty == False:
         #print("No new tweet, sleeping 6 seconds -",(datetime.now()).strftime("%d/%m/%Y %H:%M:%S"))
         time.sleep(6)
 ##################################################
-    #Check at the end of loop if 10 minutes has passed
+    #Check at the end of loop if logFrequency minutes has passed
     if (time.time() - start_time) > (logFrequency * 60):
         print((datetime.now()).strftime("%d/%m/%Y %H:%M:%S"), "Bot has made:",APIcount,"API calls and made",tweetCount,"tweets in the last",logFrequency,"minutes")
-        logFrequency += logFrequency
+        logFrequency += logUpdater
 
 ##################################################
