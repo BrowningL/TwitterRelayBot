@@ -4,12 +4,12 @@ from tweetPoster import *
 from datetime import datetime
 
 
-# Authenticate account @SentryFeed to Twitter // Set variables
-auth = tweepy.OAuthHandler("TaKRCVSWQwbuoro6urJ5yPszb", "EPneGfRaOLiKdRzhlNJ6t6NJ311q2DrINonkZ6HnTrm1e5fnxq")
-auth.set_access_token("1329106117356609537-FoI7VGBMW4biy4pPGGyTf5y3LtDsdM", "D3V9tbPZSUuPb1p2QZvYcMmWdJmtCOp5lruyJA21BXLhY")
+# Authenticate account @---------- to Twitter // Set variables
+auth = tweepy.OAuthHandler("--------------------------------------------------")
+auth.set_access_token("--------------------------------------------------", "--------------------------------------------------")
 # wait_on_rate_limit_notify=True, This will print a notification when download limit is reached
 api = tweepy.API(auth, wait_on_rate_limit_notify=True)
-userID = 'crypDat_io'
+userID = '----------'
 update = True
 empty = False
 APIcount = 0
