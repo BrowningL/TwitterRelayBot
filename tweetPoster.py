@@ -4,9 +4,9 @@ from datetime import datetime
 
 
 # Authenticate account @EarsAndAPEyes to Twitter // Set variables
-auth = tweepy.OAuthHandler("Y2eYWaFkRcHahkMMcX5IqaF1f", "jqFIdI7pOYYFQAgbbSuKlBMnjIERIDjz3r6EoVqbk7D5hQCwyb")
-auth.set_access_token("1329343847902666752-FSvOVAVxwapGkgo0Y3vi3M6cgwBGKn",
-                      "Ni8XoDhxFwKvYOtgI9X8Dv7buA9WDlQIKUyNOpUxAoDBR")
+auth = tweepy.OAuthHandler("----------", "----------")
+auth.set_access_token("----------",
+                      "----------------------------------------")
 # wait_on_rate_limit_notify=True, This will print a notification when download limit is reached
 api = tweepy.API(auth, wait_on_rate_limit_notify=True)
 
